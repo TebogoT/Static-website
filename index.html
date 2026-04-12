@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="my portfolio" content="welcome to my portfolio, here you can find information about me, my contact details, my skills and my interests">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio_styles.css">
+</head>
+<body>
+    <header>
+
+        <!-- An aria-label attribute is included to provide a clear and descriptive label for screen readers while enhancing accessibility for the users. -->
+        <nav aria-label="portfolio main navigation">
+            <ul>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to my portfolio</h1>
+    </header>
+    <main>
+        <img id="profile-picture" src="20250607_080538.avif" alt="Profile Picture" fetchpriority="high">
+
+        <!-- An aria-labelledby attribute is included in each section to provide a clear and descriptive label for screen readers while enhancing accessibility for the users. This section deals with my summary of who I am and what I do -->
+        <section id="about-me" aria-labelledby="about-me">
+            <h2>About me</h2>
+            <p>Adaptable and innovative Draughtsman ready to embark on an exciting career change into the dynamic field of UX/UI Design. Seeking to leverage my strong technical background and expertise, keen diligence, critical thinking skills, and creativity to deliver innovative, impactful, and user-centric designs. I am eager to apply transferable skills in research, collaboration, visual communication, and continuous learning to create intuitive and visually appealing user experiences in the dynamic field of UX/UI Design. </p>
+        </section>
+
+        <!--This section contains my contact information -->
+        <section id="contact" aria-labelledby="contact">
+            <h2>Contact</h2>
+            <p>Email:<a href="mailto:teb.m.90@gmail.com"> teb.m.90@gmail.com</a></p>
+            <p>Phone: +2783 885 1668</p>
+        </section>
+
+        <!-- This section contains my skills that I have acquired through my experience as a draughtsman and the skills that I have acquired through my learning of UX/UI design. -->
+        <section id="skills" aria-labelledby="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>UX/UI Design Principles</li>
+                <li>Wireframing and Prototyping</li>
+                <li>User Research and Analysis</li>
+                <li>Visual Communication</li>
+                <li>Collaboration and Communication</li>
+                <li>Adaptability and Continuous Learning</li>
+            </ul>
+        </section>
+
+        <!-- This section contains my interests and hobbies that I enjoy doing in my free time, it also contains images of me doing some of the activities that I enjoy doing. -->
+        <section id="interests" aria-labelledby="interests">
+            <h2>Interests</h2>
+            <h3>What I do for fun sometimes to have an interesting life.</h3>
+            <p>Life is too short to always stay indoors, so my friends and I enjoy doing activities when we are all available, besides doing activities with friends I also spend time with family</p>
+            <img id="hobby-images" src="IMG-20251006-WA0013.avif" alt="Braai with friends" fetchpriority="high">
+            <p>One of my interests is to spend time with friends and family, I enjoy having a braai with friends and family, it is one of the best ways to bond and have fun together.</p>
+            <img class="safari-images" src="20260131_165420.avif" alt="mother with her baby elephant" fetchpriority="high">
+            <p>Another interest of mine is to go on safaris, I enjoy going on safaris because it is a great way to connect with nature and see the beauty of wildlife, I also enjoy learning about different animals and their habitats.</p>
+            <img class="safari-images" src="20260131_150010.avif" alt="Zebra in the wild" fetchpriority="high">
+            <p>Going on safaris is also a great way to relax and unwind, it allows me to escape from the hustle and bustle of everyday life and enjoy the tranquility of nature.</p>
+        </section>
+
+        <!-- This section contains a contact form that allows users to get in touch with me, it includes fields for name, email and message, and a submit button to send the form data to the server. -->
+        <section>
+            <form id="contact-form" action="submit_form.php" method="post" aria-labelledby="contact-form">
+                <h2>Get in Touch</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" aria-required="true">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" aria-required="true">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" aria-required="true"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>(c) 2026 built by Mathaba Tebogo Mola</footer>   
+</body>
+
+</html>
